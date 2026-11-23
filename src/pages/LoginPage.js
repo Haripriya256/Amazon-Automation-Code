@@ -1,6 +1,8 @@
 const { expect } = require('@playwright/test');
 const Logger = require('../utils/logger');
 
+// login page object model
+
 class LoginPage {
   constructor(page) {
     this.page = page;
