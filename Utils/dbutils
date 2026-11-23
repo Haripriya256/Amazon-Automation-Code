@@ -1,0 +1,34 @@
+import mysql from 'mysql2/promise';
+
+export class dbutils {
+
+    constructor() {
+        this.connection = null;
+
+    }
+
+    async dbconnect(){
+        this.connection=await mysql.createConnection({
+            host:'',
+            user:'',
+            password:'',
+            db:'',
+            port:''
+        });
+    }
+
+async executeSelectQuery(query, params=[]) {
+    const [data]=this.connection.execute({
+        query,params
+    });
+    return data;
+
+}
+}
+
+test('get data from db', async ({page}) => {
+
+    const db=new dbutils();
+    await db.dbconnect();
+    const idValue=await db.executeSelectQuery('select * from Customers where id=?',[1]);
+});.

@@ -1,0 +1,27 @@
+{
+  "name": "rahulshetty-e2e-playwright",
+  "version": "1.0.0",
+  "description": "Playwright BDD Framework with POM, API & UI testing for Rahul Shetty E-commerce",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @Smoke",
+    "test:regression": "cucumber-js --tags @Regression",
+    "test:allure": "cucumber-js --format json:reports/cucumber-report.json",
+    "allure:generate": "allure generate allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report",
+    "allure:serve": "allure serve allure-results",
+    "report": "npm run test:allure && npm run allure:generate"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.48.0",
+    "allure-commandline": "^2.30.0",
+    "allure-js-commons": "^3.0.0",
+    "playwright": "^1.48.0"
+  },
+  "dependencies": {
+    "allure-cucumberjs": "^3.9.0",
+    "exceljs": "^4.4.0",
+    "mysql2": "^3.24.6"
+  }
+}

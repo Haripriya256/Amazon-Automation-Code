@@ -1,0 +1,21 @@
+{
+  "baseUrl": "https://rahulshettyacademy.com",
+  "clientUrl": "https://rahulshettyacademy.com/client",
+  "apiEndpoints": {
+    "login": "/api/ecom/auth/login",
+    "register": "/api/ecom/auth/register",
+    "getAllProducts": "/api/ecom/product/get-all-products",
+    "createOrder": "/api/ecom/order/create-order",
+    "getOrders": "/api/ecom/order/get-orders-for-customer",
+    "deleteOrder": "/api/ecom/order/delete-order",
+    "addToCart": "/api/ecom/cart/add-to-cart",
+    "getCartProducts": "/api/ecom/cart/get-cart-products"
+  },
+  "products": [
+    "ADIDAS ORIGINAL",
+    "ZARA COAT 3",
+    "IPHONE 13 PRO"
+  ],
+  "country": "India",
+  "successMessage": "Thankyou for the order."
+}
