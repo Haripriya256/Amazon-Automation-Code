@@ -1,6 +1,7 @@
 const { expect } = require('@playwright/test');
 const Logger = require('../utils/logger');
 
+//login page class to encapsulate login page interactions
 
 class LoginPage {
   constructor(page) {
