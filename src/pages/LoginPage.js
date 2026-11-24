@@ -2,7 +2,8 @@ const { expect } = require('@playwright/test');
 const Logger = require('../utils/logger');
 
 //login page class to encapsulate login page interactions
-//Locators are defined in the constructor and methods are provided for actions like navigating to the page, logging in, and verifying error messages.
+//Locators are defined in the constructor
+
 
 class LoginPage {
   constructor(page) {
